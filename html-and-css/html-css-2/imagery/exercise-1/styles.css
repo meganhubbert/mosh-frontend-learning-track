@@ -1,0 +1,71 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+.hero__wrapper {
+    background: url(./images/space__320.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0.125rem 0.125rem #000;
+    word-spacing: 1.5rem;
+}
+
+.hero__subtitle {
+    font-weight: 300;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    letter-spacing: 1.5px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__wrapper {
+        background: url(./images/space__890.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .hero__subtitle {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero__wrapper {
+        background: url(./images/space__1370.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .hero__title {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero__wrapper {
+        background: url(./images/space__1440.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .hero__title {
+        font-size: 9rem;
+    }
+}
