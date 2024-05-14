@@ -34,6 +34,7 @@ body {
     border: 1px solid #ced4da;
     outline: 0;
     transition: border .15s, box-shadow .15s;
+    font-size: 1rem;
 
     &:focus {
         border: 1px solid #86b7fe;
@@ -49,6 +50,11 @@ body {
     border-radius: 30px;
     width: 35vw;
     font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #0759d3;
+    }
 }
 
 .copyright {
