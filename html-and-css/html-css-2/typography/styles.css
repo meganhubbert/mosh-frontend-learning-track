@@ -1,0 +1,42 @@
+body {
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #222;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+  
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subheader {
+    font-style: italic;
+    font-family: 'Bitter', Times, serif;
+}
+
+.container {
+    margin: 1rem;
+
+    @media screen and (min-width: 768px) {        
+        margin: 2rem 4rem;
+    }
+}

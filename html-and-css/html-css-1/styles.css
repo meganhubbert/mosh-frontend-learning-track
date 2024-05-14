@@ -1,0 +1,40 @@
+/* exercise 1 */
+
+thead, tfoot {
+    background-color: #427fef;
+    color: white;
+    text-align: left;
+}
+
+th {
+    padding: 5px;
+    min-width: 100px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #eef7ff;
+}
+
+tbody tr:not(:last-child) {
+    border-bottom: 1px solid #c4dcf3;
+}
+
+/* exercise 2 */
+
+.box {
+    margin-top: 100px;
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
+    border-radius: 10px;
+    box-shadow: 15px 15px lightgray;
+}
