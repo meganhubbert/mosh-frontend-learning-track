@@ -1,11 +1,14 @@
+html {
+    font-size: 62.5%
+}
+
 body {
     margin: 0;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
 }
 
 .card {
-    width: 35%;
+    width: 75%;
     max-width: 500px;
     box-shadow: 0 0 20px 30px #f9f9f9;
     margin: 4rem;
@@ -13,6 +16,11 @@ body {
     overflow: hidden;
     transform: rotate(-5deg);
     transition: transform .25s ease;
+    font-size: 1.5rem;
+
+    @media screen and (min-width: 768px) {
+        width: 35%;
+    }
 }
 
 .card--detail {
@@ -24,15 +32,20 @@ body {
     background: linear-gradient(-90deg, #74d690 0%, #5cbfbb 100%);
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .profile--img {
     height: 60px;
     border-radius: 100%;
-    margin: .5rem 1rem .5rem 2rem;
+    margin: .5rem 1rem .5rem 1rem;
     border: .25rem solid #fff;
     transform: scale(.75);
     transition: transform .25s ease;
+
+    @media screen and (min-width: 768px) {
+        margin: 1.5rem 1rem 1.5rem 2rem;
+    }
 }
 
 .profile--name {
