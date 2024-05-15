@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.card {
+    width: 35%;
+    max-width: 500px;
+    box-shadow: 0 0 20px 30px #f9f9f9;
+    margin: 4rem;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: rotate(-5deg);
+    transition: transform .25s ease;
+}
+
+.card--detail {
+    padding: 1.5rem;
+    margin: 0;
+}
+
+.card--profile {
+    background: linear-gradient(-90deg, #74d690 0%, #5cbfbb 100%);
+    display: flex;
+    align-items: center;
+}
+
+.profile--img {
+    height: 60px;
+    border-radius: 100%;
+    margin: .5rem 1rem .5rem 2rem;
+    border: .25rem solid #fff;
+    transform: scale(.75);
+    transition: transform .25s ease;
+}
+
+.profile--name {
+    color: #fff;    
+}
+
+.card:hover {
+    
+    transform: rotate(0);
+
+    .profile--img {
+        transform: scale(1);
+    }
+}
