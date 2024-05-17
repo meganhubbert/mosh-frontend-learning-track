@@ -1,12 +1,15 @@
 :root {
+    /* color variables */
+    --color-accent: #ff3400;
+    --color-body-darker: #5c5577;
+    --color-body: #918ca4;
+    --color-border: #ccc;
+    --color-headings: #1b0760;
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
-    --color-accent: #ff3400;
-    --color-headings: #1b0760;
-    --color-body: #918ca4;
-    --color-body-darker: #5c5577;
-    --color-border: #ccc;
     --color-white: #fff;
+
+    /* measurement variables */
     --border-radius: 30px;
 }
 
@@ -49,6 +52,11 @@ h3 {
 
 p {
     margin-top: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
 }
 
 
@@ -96,7 +104,6 @@ a {
 @media screen and (min-width: 1024px) {
     .link-arrow {
         font-size: 1.5rem;
-
     }
 }
 
@@ -552,8 +559,8 @@ a {
 
 @media screen and (min-width: 768px) {
     .callout__grid--1x2 {
+        column-gap: 2rem;
         grid-template-columns: 1fr auto;
-        column-gap: 2rem
     }
 
     .callout__content {
@@ -569,8 +576,8 @@ a {
 }
 
 .collapsible__heading {
-    margin-top: 0;
     font-size: 3rem;
+    margin-top: 0;
 }
 
 .collapsible__chevron {
@@ -580,9 +587,9 @@ a {
 
 .collapsible__content {
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
     transition: all .25s;
-    opacity: 0;
 }
 
 .collapsible--expanded .collapsible__chevron {
@@ -593,4 +600,38 @@ a {
     display: block;
     max-height: 100vh;
     opacity: 1;
+}
+
+/* blocks */
+
+.block {
+    --padding-vertical: 6rem;
+    padding: var(--padding-vertical) 2rem;
+}
+
+.block__header {
+    text-align: center;
+}
+
+.block__heading {
+    margin-top: 0;
+}
+
+.block--dark {
+    background: #000;
+    color: #7b857b;
+}
+
+.block--dark .block__heading {
+    color: var(--color-white);
+}
+
+.block--skewed-right {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    padding-bottom: calc(--padding-vertical + 4rem);
+}
+
+.block--skewed-left {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    padding-bottom: calc(--padding-vertical + 4rem);
 }
